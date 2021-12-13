@@ -6,10 +6,6 @@ public class CameraFollowPlayer : MonoBehaviour
 {
     [SerializeField] private GameObject player;
 
-    void Start()
-    {
-        player = GameObject.Find("Head");
-    }
 
     void LateUpdate()
     {
