@@ -31,6 +31,7 @@ public class SecondCinematic : MonoBehaviour, ICinematic
         ControlPlayer.Instance.LookAt(ToLook[0]);
         TextingManager.Instance.Talk(text.Lines[0]);
         yield return new WaitForSeconds(5f);
+        ControlPlayer.Instance.StopCoroutines();
         ControlPlayer.Instance.LookAt(ToLook[1]);
         TextingManager.Instance.Talk(text.Lines[1]);
         yield return new WaitForSeconds(7f);
