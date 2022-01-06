@@ -74,19 +74,25 @@ public class EnemyController : MonoBehaviour
         {
             StartCoroutine(KillingPlayer(other.transform));
         }
-        if(other.gameObject.CompareTag("Door"))
+    }
+
+    private void OnTriggerStay(Collider other)
+    {
+        if (other.gameObject.CompareTag("Door"))
         {
-            if(other.GetComponent<Doors>())
+            if (other.GetComponent<Doors>())
             {
-                if(other.GetComponent<Doors>().openned == false)
+                if (other.GetComponent<Doors>().openned == false)
                 {
                     enemyAgent.isStopped = true;
-                } else
+                }
+                else
                 {
                     enemyAgent.isStopped = false;
                 }
 
-            } else if (other.GetComponent<EntryDoor>())
+            }
+            else if (other.GetComponent<EntryDoor>())
             {
                 if (other.GetComponent<EntryDoor>().openned == false)
                 {
@@ -100,14 +106,13 @@ public class EnemyController : MonoBehaviour
             }
         }
     }
-
     IEnumerator KillingPlayer(Transform player)
     {
         canvas.SetActive(false);
         ControlPlayer.Instance.executing = true;
         canMove = false;
         StartCoroutine(PlayerMoving(player));
-        yield return new WaitForSeconds(10f);
+        yield return new WaitForSeconds(5f);
         OnPlayerDeath?.Invoke();
     }
     IEnumerator PlayerMoving(Transform player)

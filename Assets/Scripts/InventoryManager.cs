@@ -15,6 +15,7 @@ public class InventoryManager: MonoBehaviour
     {
         Instance = this;
         inventory = GameObject.Find("Player").GetComponent<Inventory>();
+        inventory.slot.enabled = false;
     }
     public void AddItem(ItemKey key)
     {
