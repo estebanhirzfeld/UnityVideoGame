@@ -1,0 +1,19 @@
+fileFormatVersion: 2
+<<<<<<< HEAD
+<<<<<<< HEAD:Assets/Scripts/Doors.cs.meta
+guid: 7c13688f6c7a3a44c94fe04a17721b0a
+=======
+guid: 67bd42271b29eea4d9d1089385327109
+>>>>>>> 109cf2a (Falta main menu, sonidos y finales):Assets/Scripts/EntryDoor.cs.meta
+=======
+guid: 7c13688f6c7a3a44c94fe04a17721b0a
+>>>>>>> 109cf2a (Falta main menu, sonidos y finales)
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

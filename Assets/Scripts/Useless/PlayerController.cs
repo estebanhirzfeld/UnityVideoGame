@@ -27,15 +27,23 @@ public class PlayerController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        TabletMostrar();
-        Correr();
-        Rotar();
-        Inputs();
-        ControlDrag();
+        Debug.Log(ControlPlayer.Instance.executing);
+        if (ControlPlayer.Instance.executing != true)
+        {
+            TabletMostrar();
+            Correr();
+            Rotar();
+            Inputs();
+            ControlDrag();
+        }
     }
     void FixedUpdate()
     {
-        Avanzar();
+        if (ControlPlayer.Instance.executing != true)
+        {
+            Avanzar();
+        }
+
     }
 
     void Inputs()

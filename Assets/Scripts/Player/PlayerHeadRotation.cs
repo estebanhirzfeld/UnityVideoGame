@@ -9,14 +9,17 @@ public class PlayerHeadRotation : MonoBehaviour
 
     void Update()
     {
-        Rotar();
+        if (ControlPlayer.Instance.executing != true)
+        {
+            Rotar();
+        }
     }
 
     void Rotar()
     {
         ejeY += Input.GetAxis("Mouse Y");
         ejeX += Input.GetAxis("Mouse X");
-        ejeY = Mathf.Clamp(ejeY, -20, 15);
+        ejeY = Mathf.Clamp(ejeY, -40, 15);
         Quaternion angulo = Quaternion.Euler(-ejeY * 1.5f, ejeX, 0);
         transform.rotation = Quaternion.Lerp(transform.rotation, angulo, 1 * Time.deltaTime);
     }

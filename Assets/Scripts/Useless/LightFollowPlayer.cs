@@ -9,7 +9,7 @@ public class LightFollowPlayer : MonoBehaviour
 
     void Start()
     {
-        player = GameObject.Find("Jugador");
+        player = GameObject.Find("Player");
     }
 
     void LateUpdate()

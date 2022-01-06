@@ -14,7 +14,7 @@ public class HideInLocker : MonoBehaviour
 
     void Awake()
     {
-        player = GameObject.Find("Jugador");
+        player = GameObject.Find("Player");
     }
     private void LateUpdate()
     {
