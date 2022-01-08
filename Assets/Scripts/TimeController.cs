@@ -9,7 +9,7 @@ public class TimeController : MonoBehaviour
 
     protected TimeController() { }
     public static TimeController Instance;
-    private const float REAL_SECONDS_PER_DAY = 200f;
+    private const float REAL_SECONDS_PER_DAY = 300f;
     [SerializeField] private TextMeshPro clockText;
     public float day;
     

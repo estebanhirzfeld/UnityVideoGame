@@ -7,12 +7,14 @@ public class GameManager : Singlenton<GameManager>
 {
     [SerializeField] GameObject UIInGame;
     [SerializeField] GameObject UICinematicText;
+    [SerializeField] GameObject enParticles;
 
    
     private void Start()
     {
         FirstCinematic.OnFirstCinematic += FirstCinematicMethod;
         SecondCinematic.OnSecondCinematic += SecondCinematicMethod;
+        FirstFinalCinematic.OnFirstFinal += FirstFinal;
         EnemyController.OnPlayerDeath += EndGame;
     }
 
@@ -24,8 +26,13 @@ public class GameManager : Singlenton<GameManager>
     }
     public void SecondCinematicMethod()
     {
+        enParticles.SetActive(false);
         UIInGame.SetActive(true);
         SecondCinematic.OnSecondCinematic -= SecondCinematicMethod;
+    }
+    public void FirstFinal()
+    {
+        SceneManager.LoadScene("FirstFinalScene", LoadSceneMode.Single);
     }
     public void EndGame()
     {
