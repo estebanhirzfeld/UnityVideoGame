@@ -18,7 +18,8 @@ public class FirstFinalCinematic : MonoBehaviour, ICinematic
     {
         ControlPlayer.Instance.LookAt(ToLook);
         ControlPlayer.Instance.MoveTo(ToGo);
-        yield return new WaitForSeconds(8);
+        yield return new WaitForSeconds(5);
         OnFirstFinal?.Invoke();
+        Debug.Log("A");
     }
 }

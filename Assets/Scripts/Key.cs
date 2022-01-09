@@ -10,6 +10,7 @@ public class Key : MonoBehaviour
         second,
         three,
         garage,
-        nothing
+        nothing,
+        noOpen
     }
 }

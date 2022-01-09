@@ -11,10 +11,18 @@ public class EntryDoor : MonoBehaviour, IClicked
         {
             anim = GetComponent<Animator>();
             anim.SetBool("IsOpen", true);
-        GetGarageKey.OnGetGarageKey += OpenDoor;
-        }
 
-        public void OnClickAction()
+        }
+    private void OnEnable()
+    {
+        GetGarageKey.OnGetGarageKey += OpenDoor;
+    }
+    private void OnDisable()
+    {
+        GetGarageKey.OnGetGarageKey -= OpenDoor;
+    }
+
+    public void OnClickAction()
         {
                 if (openned == true)
                 {

@@ -20,7 +20,15 @@ public class EnemyController : MonoBehaviour
         animEnemy = GetComponent<Animator>();
         enemyAgent = GetComponent<NavMeshAgent>();
         player = GameObject.Find("Player");       
+
+    }
+    private void OnEnable()
+    {
         FirstCinematic.OnFirstCinematic += ForFirstCinematic;
+    }
+    private void OnDisable()
+    {
+        FirstCinematic.OnFirstCinematic -= ForFirstCinematic;
     }
 
     // Update is called once per frame

@@ -29,7 +29,7 @@ public class MiniCinematics : MonoBehaviour
                 UIThings.SetActive(false);
                 ControlPlayer.Instance.executing = true;
                 cinematic.OnStartCinematic();
-                yield return new WaitForSecondsRealtime(time);
+                yield return new WaitForSeconds(time);
 
                 ControlPlayer.Instance.executing = false;
                 UIThings.SetActive(true);

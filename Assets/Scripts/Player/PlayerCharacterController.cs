@@ -19,7 +19,6 @@ public class PlayerCharacterController : MonoBehaviour
     private void Awake()
     {
         Cursor.lockState = CursorLockMode.Locked;
-
     }
 
     private void Start()
@@ -30,7 +29,7 @@ public class PlayerCharacterController : MonoBehaviour
     }
     void Update()
     {
-        if (ControlPlayer.Instance.executing != true)
+        if (ControlPlayer.Instance.executing != true && GameManager.Instance.onPause != true)
         {
             Move();
             Rotate();

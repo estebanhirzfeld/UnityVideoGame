@@ -9,7 +9,7 @@ public class PlayerHeadRotation : MonoBehaviour
 
     void Update()
     {
-        if (ControlPlayer.Instance.executing != true)
+        if (ControlPlayer.Instance.executing != true && GameManager.Instance.onPause != true)
         {
             Rotar();
         }

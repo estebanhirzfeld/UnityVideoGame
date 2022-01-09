@@ -7,7 +7,10 @@ public class Restart : MonoBehaviour
 {
     void Update()
     {
-        if(Input.anyKeyDown)
+        if(Input.GetKeyDown(KeyCode.Escape))
+        {
+            SceneManager.LoadSceneAsync("MainMenu", LoadSceneMode.Single);
+        } else if(Input.anyKeyDown)
         {
             SceneManager.LoadSceneAsync("InGame", LoadSceneMode.Single);
         }
