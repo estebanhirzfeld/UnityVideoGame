@@ -10,7 +10,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b14feb4250ee1174cac4ee9d89f66939, type: 3}
-  m_Name: SecondCInematic
+  m_Name: FristCinemacit2
   m_EditorClassIdentifier: 
   conversationLines:
-  - ConversationText: Uf.. That was close...
+  - ConversationText: What was that!?
+  - ConversationText: Oh God!...
