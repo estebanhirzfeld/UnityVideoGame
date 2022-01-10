@@ -728,6 +728,67 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
+--- !u!1001 &1191815620
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4263014130545423667, guid: abff3e26c805edc4381e697cdd53064d, type: 3}
+      propertyPath: m_RootOrder
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4263014130545423667, guid: abff3e26c805edc4381e697cdd53064d, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 201.18025
+      objectReference: {fileID: 0}
+    - target: {fileID: 4263014130545423667, guid: abff3e26c805edc4381e697cdd53064d, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.0216942
+      objectReference: {fileID: 0}
+    - target: {fileID: 4263014130545423667, guid: abff3e26c805edc4381e697cdd53064d, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 60.910805
+      objectReference: {fileID: 0}
+    - target: {fileID: 4263014130545423667, guid: abff3e26c805edc4381e697cdd53064d, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4263014130545423667, guid: abff3e26c805edc4381e697cdd53064d, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4263014130545423667, guid: abff3e26c805edc4381e697cdd53064d, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4263014130545423667, guid: abff3e26c805edc4381e697cdd53064d, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4263014130545423667, guid: abff3e26c805edc4381e697cdd53064d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4263014130545423667, guid: abff3e26c805edc4381e697cdd53064d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4263014130545423667, guid: abff3e26c805edc4381e697cdd53064d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6682289518723552755, guid: abff3e26c805edc4381e697cdd53064d, type: 3}
+      propertyPath: m_Name
+      value: SceneLoaderAnimation
+      objectReference: {fileID: 0}
+    - target: {fileID: 6682289518723552755, guid: abff3e26c805edc4381e697cdd53064d, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: abff3e26c805edc4381e697cdd53064d, type: 3}
 --- !u!1 &1280061497
 GameObject:
   m_ObjectHideFlags: 0
@@ -928,8 +989,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 956301311
-  m_fontColor: {r: 1, g: 1, b: 1, a: 0.078431375}
+    rgba: 687865855
+  m_fontColor: {r: 1, g: 1, b: 1, a: 0.15686275}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:

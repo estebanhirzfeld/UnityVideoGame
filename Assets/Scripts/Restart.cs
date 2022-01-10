@@ -1,7 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.SceneManagement;
 
 public class Restart : MonoBehaviour
 {
@@ -9,10 +8,10 @@ public class Restart : MonoBehaviour
     {
         if(Input.GetKeyDown(KeyCode.Escape))
         {
-            SceneManager.LoadSceneAsync("MainMenu", LoadSceneMode.Single);
+            GameMenu.Instance.ChangeScene("MainMenu");
         } else if(Input.anyKeyDown)
         {
-            SceneManager.LoadSceneAsync("InGame", LoadSceneMode.Single);
+            GameMenu.Instance.ChangeScene("InGame");
         }
     }
 }

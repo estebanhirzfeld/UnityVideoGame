@@ -1,7 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.SceneManagement;
 
 public class WaitToEnd : MonoBehaviour
 {
@@ -14,7 +13,7 @@ public class WaitToEnd : MonoBehaviour
     IEnumerator ShowFinal(float time)
     {
         yield return new WaitForSeconds(time);
-        SceneManager.LoadScene("FinalText", LoadSceneMode.Single);
+        GameMenu.Instance.ChangeScene("FinalText");
 
     }
         

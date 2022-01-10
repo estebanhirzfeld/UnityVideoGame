@@ -1,7 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.SceneManagement;
 
 public class GameManager : Singlenton<GameManager>
 {
@@ -14,7 +13,6 @@ public class GameManager : Singlenton<GameManager>
    
     private void Start()
     {
-        Time.timeScale = 1;
         onPauseMenu.SetActive(false);
     }
     private void OnEnable()
@@ -74,12 +72,11 @@ public class GameManager : Singlenton<GameManager>
     }
     public void FirstFinal()
     {
-        SceneManager.LoadScene("FirstFinalScene", LoadSceneMode.Single);
-        Debug.Log("A");
+        GameMenu.Instance.ChangeScene("FirstFinalScene");
     }
     public void EndGame()
     {
-        SceneManager.LoadScene("GameOver", LoadSceneMode.Single);
+        GameMenu.Instance.ChangeScene("GameOver");
     }
     IEnumerator BlinkEffect()
     {
